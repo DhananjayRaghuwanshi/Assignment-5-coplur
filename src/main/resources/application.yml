@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: Employee
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/employee_management?useSSL=false
+    username: root
+    password: Dhananjay@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+
+
+
+
+
+
+
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /doc
